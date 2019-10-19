@@ -1,0 +1,17 @@
+/* Set a background image by replacing the URL below */
+.my-start {
+    background: url('./assets/cowomen.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 90vh;
+  }
+  .my-start .w-100 {
+    background: rgba(255, 255, 0, 0.4);
+    margin-top: 40vh;  
+  }
+
+  nav {
+      height: 10vh;     
+  }
