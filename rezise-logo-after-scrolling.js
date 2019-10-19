@@ -1,7 +1,31 @@
-var y;
-var scroll = true;
 
-document.getElementById("myDIV").onscroll = function() { myFunction() };
+var scroll = false;
+var y = window.scrollY;
+
+
+if (y<50) {
+
+    
+ 
+    var element = document.getElementById("Scroll");
+    element.classList.add("logo");
+
+    // document.getElementById("myDIV").classList.remove("navbar-light");
+
+    var element = document.getElementById("mynav");
+    element.classList.remove("navbar-light");
+    element.classList.add("navbar-dark");
+    element.classList.remove("bg-white");
+    element.classList.add("bg-dark");
+   
+    var scroll = true;
+    // myscrollTransition
+}
+
+
+document.getElementById("myDIV").onscroll = function() { 
+    myFunction() 
+};
 
 function myFunction() {
     y = window.scrollY;
@@ -63,4 +87,5 @@ function myFunction() {
 
         scroll = true;   
     }
+    
 }
