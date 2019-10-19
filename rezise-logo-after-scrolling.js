@@ -5,7 +5,7 @@ document.getElementById("myDIV").onscroll = function() { myFunction() };
 
 function myFunction() {
     y = window.scrollY;
-    if (y>250 && scroll==true) {
+    if (y>50 && scroll==true) {
         
         document.querySelector("#Scroll").
         style ='transform: scale(1) translateY(6px); fill: #354731;';  
@@ -33,13 +33,13 @@ function myFunction() {
         style='filter: invert(50%)';
 
         scroll = false;
-        console.log(scroll + "sollte wieder");
+        console.log(y + "--sollte wieder");
         
     }    
 
-    if (y<250  && scroll==false) {            
+    if (y<50  && scroll==false) {            
         document.querySelector("#Scroll").
-        style ='transform: scale(5) translateY(10vh); fill: white;';
+        style ='transform: scale(3) translateY(10vh); fill: white;';
 
         document.querySelector("#Stroke").
         style='stroke:white';
