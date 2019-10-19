@@ -3,12 +3,13 @@ var scroll = false;
 var y = window.scrollY;
 
 
-if (y<50) {
+if (y<50 && scroll==false) {
 
     
  
     var element = document.getElementById("Scroll");
     element.classList.add("logo");
+    // element.classList.add("myscrollTransition");
 
     // document.getElementById("myDIV").classList.remove("navbar-light");
 
@@ -28,11 +29,15 @@ document.getElementById("myDIV").onscroll = function() {
 };
 
 function myFunction() {
+    var element = document.getElementById("Scroll");
+    element.classList.add("myscrollTransition");
+    
     y = window.scrollY;
     if (y>50 && scroll==true) {
         
         document.querySelector("#Scroll").
         style ='transform: scale(1) translateY(6px); fill: #354731;';  
+        
 
         document.querySelector("#Stroke").
         style='stroke:#354731';
